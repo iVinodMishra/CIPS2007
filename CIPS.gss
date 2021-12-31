@@ -1,0 +1,95 @@
+/**
+@@ THIS PROGRAM COMPUTE SOME STATISTICS OF TABLE 10,11,14 and more OF PESARAN, 	@@
+@@ " A SIMPLE PANEL UNIT ROOT TEST UNDER CROSS SECTION DEPENDENCE"     		    @@
+@@  FEBRUARY 2006                                                      		    @@
+@@  								       		                                @@
+@@  IT IS NECESSARY TO MODIFY DIRECTORY OF EXCEL FILE                           @@
+@@   "real_exchange_7398.xls",                                                  @@         
+@@  IN THE FIRST LINE OF THE PROGRAM.                                           @@
+@@                                                                              @@
+@@  ALSO A SIMPLE CODE TO COMPUTE CD TEST STATISTIC IS FOUND AT THE             @@
+@@  END OF THIS FILE. THIS IS ONLY FOR BALANCED PANEL DATA, AND                 @@
+@@  REQUIRE RESIDUALS AS INPUTS.                                                @@
+@@                                                                              @@
+@@  It would be appreciated if one could acknowledge the use of code            @@
+@@  in his/er research.                                                         @@
+@@                                                                              @@
+@@    Takashi Yamagata 13 March 06                                              @@
+**/
+
+
+
+/***********************************************************************/
+/** Loading the data, Please change the directory of excel data file **/
+/***********************************************************************/
+new;
+cls;
+output file = CIPS.out reset; 
+
+dscount = 1;
+do while dscount <= 2; /* Outermost loop for selecting data series */
+
+if dscount == 1; 
+	data = xlsreadm("ENERGY.xls","b34:n59",3,0); 
+	print "                                        ";
+	print "-----------------------------------------";
+	print " Per Capita Energy consumption in Levels";
+    print "----------------------------------------";
+    print "                                        ";	
+endif;
+
+if dscount == 2; 
+	print "                                        ";
+	print "-----------------------------------------";
+	data = xlsreadm("ENERGY.xls","b67:n91",3,0); 
+	print "Per Capita Energy Consumption in First Differences";
+	print "----------------------------------------";
+    print "                                        ";
+endif;
+
+maxp=3;
+case=3;
+var_mat=data;
+t=rows(data)-maxp-1;
+n=cols(data);
+
+/***********************************************************************/
+/** Reproduce Left Panel of Table 10 of Pesaran (2006) **/
+/***********************************************************************/
+"";
+"Table 1: CD test statistics: T=26";
+
+/* firstly obtain residuals of ADF(p) regressions */
+/* which is "d" below. See top of IPSmarch06.prc file */
+/* for details in using this procedure                */
+{a,b,c,d}=ips(var_mat,maxp,case);
+
+/* compute CD test statistics for each p */
+i=1;
+do while i<=maxp+1;
+    res_p_mat=d[1+(i-1)*t:(i)*t,.];
+    {cd_p,lm_p, rho_bar}=cdlm(res_p_mat);
+    format /rd 5,3;
+    "p=";;i-1;;":";;cd_p;;":";;rho_bar;
+    i=i+1;
+endo;
+
+/***********************************************************************/
+/** Reproduce Left Panel of Table 11 of Pesaran (2006) **/
+/***********************************************************************/
+"";    
+"----------------------------------------";
+"Table 2: CIPS test statistics for Individual countires and Panel: T=26";
+/* See top of CIPSmarch06.prc file */
+/* for details in using this procedure */
+{a2,b2,c2,d2}=cips(var_mat,maxp,case);
+
+dscount = dscount + 1;
+endo; /* Close of outermost loop */
+
+end;
+
+
+/* Include the source file containing all the procedure defitions. */
+
+#include CIPS_PROCS.src;

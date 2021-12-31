@@ -1,0 +1,198 @@
+                                        
+-----------------------------------------
+ Per Capita Energy consumption in Levels
+----------------------------------------
+                                        
+
+Table 1: CD test statistics: T=26
+p=0.000 :3.622 :0.087 
+p=1.000 :3.091 :0.075 
+p=2.000 :3.197 :0.077 
+p=3.000 :3.038 :0.073 
+
+----------------------------------------
+Table 2: CIPS test statistics for Individual countires and Panel: T=26
+@@@@@@@@@@@@@@@@@@@ CADF( 0 ) @@@@@@@@@@@@@@@@@@@@
+CIPS TEST: CASE 3 , WITH INTERCEPT AND TREND
+N=   13 , T=   22 , (   26 data points used)
+   CIPS            :  -2.716 
+   CIPS*(truncated):  -2.716 
+* Truncation is done for CADF_i in such a way that
+when CADF_i<k1, CADF_i=k1 and when CADF_i>k2, CADF_i=k2,
+where k1=-6.42  and k2=1.70 .
+Appropriate critical values are in Table 2, Pesaran (2006).
+-------------------------------------------------------
+
+@@@@@@@@@@@@@@@@@@@ CADF( 1 ) @@@@@@@@@@@@@@@@@@@@
+CIPS TEST: CASE 3 , WITH INTERCEPT AND TREND
+N=   13 , T=   22 , (   26 data points used)
+   CIPS            :  -2.587 
+   CIPS*(truncated):  -2.587 
+* Truncation is done for CADF_i in such a way that
+when CADF_i<k1, CADF_i=k1 and when CADF_i>k2, CADF_i=k2,
+where k1=-6.42  and k2=1.70 .
+Appropriate critical values are in Table 2, Pesaran (2006).
+-------------------------------------------------------
+
+@@@@@@@@@@@@@@@@@@@ CADF( 2 ) @@@@@@@@@@@@@@@@@@@@
+CIPS TEST: CASE 3 , WITH INTERCEPT AND TREND
+N=   13 , T=   22 , (   26 data points used)
+   CIPS            :  -2.099 
+   CIPS*(truncated):  -2.099 
+* Truncation is done for CADF_i in such a way that
+when CADF_i<k1, CADF_i=k1 and when CADF_i>k2, CADF_i=k2,
+where k1=-6.42  and k2=1.70 .
+Appropriate critical values are in Table 2, Pesaran (2006).
+-------------------------------------------------------
+
+@@@@@@@@@@@@@@@@@@@ CADF( 3 ) @@@@@@@@@@@@@@@@@@@@
+CIPS TEST: CASE 3 , WITH INTERCEPT AND TREND
+N=   13 , T=   22 , (   26 data points used)
+   CIPS            :  -2.100 
+   CIPS*(truncated):  -2.100 
+* Truncation is done for CADF_i in such a way that
+when CADF_i<k1, CADF_i=k1 and when CADF_i>k2, CADF_i=k2,
+where k1=-6.42  and k2=1.70 .
+Appropriate critical values are in Table 2, Pesaran (2006).
+-------------------------------------------------------
+
+
+*****************************************************
+CADF_i(p) Statistics: Case 3 , WITH INTERCEPT AND TREND
+
+    id/p        0        1        2        3 
+       1   -5.582   -3.816   -3.231   -2.589 
+       2   -1.068   -0.282   -0.081   -0.250 
+       3   -1.863   -1.973   -0.734   -1.347 
+       4   -5.241   -4.607   -4.597   -3.932 
+       5   -1.419   -1.788   -2.583   -2.620 
+       6   -2.955   -1.154   -0.629   -0.032 
+       7   -2.925   -4.390   -3.261   -5.269 
+       8   -3.307   -2.796   -1.570    0.527 
+       9   -1.795   -2.128   -1.705   -3.735 
+      10   -5.203   -4.539   -4.526   -3.644 
+      11   -2.371   -3.795   -2.074   -2.769 
+      12   -0.844   -1.372   -1.441   -0.712 
+      13   -0.740   -0.992   -0.860   -0.922 
+
+Appropriate critical values are in Table 1, Pesaran (2006).
+*****************************************************
+CADF*_i(p) Statistics (truncated): Case 3 , WITH INTERCEPT and TREND
+
+    id/p        0        1        2        3 
+       1   -5.582   -3.816   -3.231   -2.589 
+       2   -1.068   -0.282   -0.081   -0.250 
+       3   -1.863   -1.973   -0.734   -1.347 
+       4   -5.241   -4.607   -4.597   -3.932 
+       5   -1.419   -1.788   -2.583   -2.620 
+       6   -2.955   -1.154   -0.629   -0.032 
+       7   -2.925   -4.390   -3.261   -5.269 
+       8   -3.307   -2.796   -1.570    0.527 
+       9   -1.795   -2.128   -1.705   -3.735 
+      10   -5.203   -4.539   -4.526   -3.644 
+      11   -2.371   -3.795   -2.074   -2.769 
+      12   -0.844   -1.372   -1.441   -0.712 
+      13   -0.740   -0.992   -0.860   -0.922 
+* Truncation is done for CADF_i in such a way that
+when CADF_i<k1, CADF_i=k1 and when CADF_i>k2, CADF_i=k2,
+where k1=-6.42  and k2=1.70 .
+Appropriate critical values are in Table 1, Pesaran (2006).
+                                        
+-----------------------------------------
+Per Capita Energy Consumption in First Differences
+----------------------------------------
+                                        
+
+Table 1: CD test statistics: T=26
+p=0.000 :2.212 :0.055 
+p=1.000 :2.796 :0.069 
+p=2.000 :2.789 :0.069 
+p=3.000 :2.274 :0.056 
+
+----------------------------------------
+Table 2: CIPS test statistics for Individual countires and Panel: T=26
+@@@@@@@@@@@@@@@@@@@ CADF( 0 ) @@@@@@@@@@@@@@@@@@@@
+CIPS TEST: CASE 3 , WITH INTERCEPT AND TREND
+N=   13 , T=   21 , (   25 data points used)
+   CIPS            :  -5.777 
+   CIPS*(truncated):  -5.177 
+* Truncation is done for CADF_i in such a way that
+when CADF_i<k1, CADF_i=k1 and when CADF_i>k2, CADF_i=k2,
+where k1=-6.42  and k2=1.70 .
+Appropriate critical values are in Table 2, Pesaran (2006).
+-------------------------------------------------------
+
+@@@@@@@@@@@@@@@@@@@ CADF( 1 ) @@@@@@@@@@@@@@@@@@@@
+CIPS TEST: CASE 3 , WITH INTERCEPT AND TREND
+N=   13 , T=   21 , (   25 data points used)
+   CIPS            :  -4.010 
+   CIPS*(truncated):  -3.866 
+* Truncation is done for CADF_i in such a way that
+when CADF_i<k1, CADF_i=k1 and when CADF_i>k2, CADF_i=k2,
+where k1=-6.42  and k2=1.70 .
+Appropriate critical values are in Table 2, Pesaran (2006).
+-------------------------------------------------------
+
+@@@@@@@@@@@@@@@@@@@ CADF( 2 ) @@@@@@@@@@@@@@@@@@@@
+CIPS TEST: CASE 3 , WITH INTERCEPT AND TREND
+N=   13 , T=   21 , (   25 data points used)
+   CIPS            :  -3.196 
+   CIPS*(truncated):  -3.196 
+* Truncation is done for CADF_i in such a way that
+when CADF_i<k1, CADF_i=k1 and when CADF_i>k2, CADF_i=k2,
+where k1=-6.42  and k2=1.70 .
+Appropriate critical values are in Table 2, Pesaran (2006).
+-------------------------------------------------------
+
+@@@@@@@@@@@@@@@@@@@ CADF( 3 ) @@@@@@@@@@@@@@@@@@@@
+CIPS TEST: CASE 3 , WITH INTERCEPT AND TREND
+N=   13 , T=   21 , (   25 data points used)
+   CIPS            :  -2.933 
+   CIPS*(truncated):  -2.933 
+* Truncation is done for CADF_i in such a way that
+when CADF_i<k1, CADF_i=k1 and when CADF_i>k2, CADF_i=k2,
+where k1=-6.42  and k2=1.70 .
+Appropriate critical values are in Table 2, Pesaran (2006).
+-------------------------------------------------------
+
+
+*****************************************************
+CADF_i(p) Statistics: Case 3 , WITH INTERCEPT AND TREND
+
+    id/p        0        1        2        3 
+       1   -6.991   -3.756   -4.963   -5.488 
+       2   -7.034   -3.925   -3.797   -3.733 
+       3   -3.645   -4.190   -2.219   -2.652 
+       4   -6.396   -4.187   -3.264   -2.637 
+       5   -4.564   -2.674   -2.184   -1.489 
+       6   -9.247   -4.022   -3.223   -2.239 
+       7   -4.687   -3.620   -2.134   -3.657 
+       8   -5.196   -3.469   -3.731   -1.258 
+       9   -3.950   -3.558   -2.321   -2.563 
+      10  -10.215   -8.296   -5.272   -3.755 
+      11   -4.720   -5.088   -3.409   -3.208 
+      12   -5.134   -2.694   -2.630   -2.969 
+      13   -3.325   -2.657   -2.401   -2.486 
+
+Appropriate critical values are in Table 1, Pesaran (2006).
+*****************************************************
+CADF*_i(p) Statistics (truncated): Case 3 , WITH INTERCEPT and TREND
+
+    id/p        0        1        2        3 
+       1   -6.420   -3.756   -4.963   -5.488 
+       2   -6.420   -3.925   -3.797   -3.733 
+       3   -3.645   -4.190   -2.219   -2.652 
+       4   -6.396   -4.187   -3.264   -2.637 
+       5   -4.564   -2.674   -2.184   -1.489 
+       6   -6.420   -4.022   -3.223   -2.239 
+       7   -4.687   -3.620   -2.134   -3.657 
+       8   -5.196   -3.469   -3.731   -1.258 
+       9   -3.950   -3.558   -2.321   -2.563 
+      10   -6.420   -6.420   -5.272   -3.755 
+      11   -4.720   -5.088   -3.409   -3.208 
+      12   -5.134   -2.694   -2.630   -2.969 
+      13   -3.325   -2.657   -2.401   -2.486 
+* Truncation is done for CADF_i in such a way that
+when CADF_i<k1, CADF_i=k1 and when CADF_i>k2, CADF_i=k2,
+where k1=-6.42  and k2=1.70 .
+Appropriate critical values are in Table 1, Pesaran (2006).
